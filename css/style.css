@@ -41,6 +41,10 @@ html, body {
   padding-bottom: 195px;
 }
 
+.main_companies {
+  padding-bottom: 177px;
+}
+
 .button {
   display: inline-block;
   font-weight: 700;
@@ -108,7 +112,8 @@ html, body {
 .header {
   font-weight: 700;
   background:
-    url("../images/decor/header_BG_shapes.svg")50% 50% / 100% 100% no-repeat,
+    url("../images/decor/header_BG_shapes.svg")
+    50% 50% / 100% 100% no-repeat,
     linear-gradient(55.95deg,
       rgba(255, 63, 58, 0.2) 0%,
       rgba(247, 94, 5, 0.2) 100%);
@@ -537,7 +542,8 @@ html, body {
   display: block;
   width: 24px;
   height: 24px;
-  background: url(/images/icons/arrow-right.svg) 0 2px / 100% no-repeat;
+  background: url(/images/icons/arrow-right.svg)
+    0 2px / 100% no-repeat;
   margin-left: 11px;
 }
 
@@ -630,17 +636,18 @@ html, body {
     0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 }
 
-.cert_image-box img{
+.cert_image-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 /*------------------------------------------- TEAM - SLIDER ------------------------------------*/
 /*------------------------------------------- TEAM - SLIDER ------------------------------------*/
 
 
 .team {
-  background: url("/images/decor/mainTeam_BG_group_1.svg") 
+  background: url("/images/decor/mainTeam_BG_group_1.svg")
   calc(50% + 0px) calc(50% + 0px) no-repeat, #F4F5F6;
 }
 
@@ -694,12 +701,13 @@ html, body {
   right: 0;
   bottom: 0;
   padding: 20px;
-  background: linear-gradient(180deg, rgba(30, 33, 44, 0.00) 43.9%,
-      rgba(30, 33, 44, 0.03) 55.21%,
-      rgba(30, 33, 44, 0.33) 68.73%,
-      rgba(30, 33, 44, 0.56) 76.17%,
-      rgba(30, 33, 44, 0.77) 83.75%,
-      rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+  background: linear-gradient(180deg,
+    rgba(30, 33, 44, 0.00) 43.9%,
+    rgba(30, 33, 44, 0.03) 55.21%,
+    rgba(30, 33, 44, 0.33) 68.73%,
+    rgba(30, 33, 44, 0.56) 76.17%,
+    rgba(30, 33, 44, 0.77) 83.75%,
+    rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
   transform: translateY(50%);
   transition: all 0.3s;
 }
@@ -801,8 +809,8 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-44.9%, -55.4%);
-  background: url(/images/decor/mainTeam_BG_group_2.svg) 
-  0 0 / 100% no-repeat, #F4F5F6;;
+  background: url(/images/decor/mainTeam_BG_group_2.svg)
+    0 0 / 100% no-repeat, #F4F5F6;
   width: 1971px;
   height: 816px;
 }
@@ -851,7 +859,8 @@ html, body {
   position: absolute;
   top: 0;
   left: -58px;
-  background: url("../images/icons/braces.svg") 0 0 / 100% no-repeat;
+  background: url("../images/icons/braces.svg")
+    0 0 / 100% no-repeat;
   width: 28px;
   height: 20px;
 
@@ -868,8 +877,6 @@ html, body {
   margin-right: 20px;
 }
 
-.testimonials_info {}
-
 .testimonials_info-name {
   font-weight: 700;
   color: #1E212C;
@@ -883,17 +890,17 @@ html, body {
 }
 
 .testimonials_arrow {
-position: absolute;
-top: 0;
-bottom: 0;
-width: 50px;
-display: flex;
-align-items: center;
-z-index: 5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
 }
 
 .testimonials_arrow path {
-transition: all 0.3s;
+  transition: all 0.3s;
 
 }
 
@@ -901,7 +908,7 @@ transition: all 0.3s;
   content: "";
   position: absolute;
   top: 50%;
-  
+
   background-color: #FF3F3A;
   width: 48px;
   height: 48px;
@@ -935,45 +942,96 @@ transition: all 0.3s;
 
 .testimonials_next:hover::before {
   transform: translate(-50%, -50%) scale(1);
-  }
+}
 
-.testimonials_arrow:hover path{
+.testimonials_arrow:hover path {
   fill: #fff;
 }
 
-.testimonials_dots .slick-dots{
-display: flex;
-justify-content: center;
-align-items: center;
+.testimonials_dots .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.testimonials_dots li{
+.testimonials_dots li {
   margin-right: 12px;
 }
 
-.testimonials_dots .slick-active button::before{
+.testimonials_dots .slick-active button::before {
   background-color: #424551;
   transition: all 0.3s;
 }
 
-.testimonials_dots button{
-font-size: 0;
-background-color: transparent;
-height: 30px;
-width: 30px;
-display: flex;
-align-items: center;
+.testimonials_dots button {
+  font-size: 0;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
 
 }
 
-.testimonials_dots button::before{
+.testimonials_dots button::before {
   content: "";
   height: 3px;
   width: 100%;
   background-color: #B3B7BC;
   border-radius: 3px;
-  }
+}
 
-  .testimonials_dots li:last-child{
-    margin-right: 0;
-    }
+.testimonials_dots li:last-child {
+  margin-right: 0;
+}
+
+/*------------------------------------------- COMPANIES ----------------------------------------*/
+/*------------------------------------------- COMPANIES ----------------------------------------*/
+
+.companies {
+  background: #F4F5F6;
+  
+}
+
+.companies_inner {
+  position: relative;
+}
+
+.companies_inner::before {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: -230;
+  background: url("/images/decor/mainTeam_BG_shapes_3.svg")
+    0 0 / 100% no-repeat;
+  width: 90px;
+  height: 90px;
+}
+
+.companies_heading {
+  margin-bottom: 60px;
+}
+
+.companies_grid {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(6, 1fr);
+  gap: 40px 100px;
+}
+
+.companies_grid-link {
+  display: block;
+}
+
+.companies_grid-link img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  opacity: 0.4;
+  transition: all 1.3s;
+}
+
+.companies_grid-link:hover img{
+  filter: grayscale(0);
+  opacity: 1;
+  transition: all 0.3s;
+}
