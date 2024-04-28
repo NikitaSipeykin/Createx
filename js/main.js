@@ -42,6 +42,27 @@ $(function () {
     $('.testimonials_slider').slick('slickNext')
   })
   
+  
 
+  // ### realize a list with drop-down items ###
+
+  // $('.program_accordeon-link').on('click', function(action){
+  //   action.preventDefault(),
+  //   $(this).toggleClass('program_accordeon-link--active'),
+  //   $(this).children('.program_accordeon-text').slideToggle()
+  // })
+
+  $('.program_accordeon-link').on('click', function(action){
+    action.preventDefault()
+    if ($(this).hasClass('program_accordeon-link--active')){
+      $(this).removeClass('program_accordeon-link--active')
+      $(this).children('.program_accordeon-text').slideUp()
+    }else{
+      $('.program_accordeon-link').removeClass('program_accordeon-link--active')
+      $('.program_accordeon-text').slideUp()
+      $(this).addClass('program_accordeon-link--active')
+      $(this).children('.program_accordeon-text').slideDown()
+    }
+  })
 
 })

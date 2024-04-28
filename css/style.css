@@ -45,6 +45,10 @@ html, body {
   padding-bottom: 177px;
 }
 
+.main_program {
+  padding: 115px 0 185px;
+}
+
 .button {
   display: inline-block;
   font-weight: 700;
@@ -105,15 +109,18 @@ html, body {
 }
 
 
+
 /*=========================================== HEADER ===========================================*/
 /*------------------------------------------- HEADER-TOP ---------------------------------------*/
 /*------------------------------------------- HEADER-TOP ---------------------------------------*/
 
+
+
+
 .header {
   font-weight: 700;
   background:
-    url("../images/decor/header_BG_shapes.svg")
-    50% 50% / 100% 100% no-repeat,
+    url("../images/decor/header_BG_shapes.svg") 50% 50% / 100% 100% no-repeat,
     linear-gradient(55.95deg,
       rgba(255, 63, 58, 0.2) 0%,
       rgba(247, 94, 5, 0.2) 100%);
@@ -199,8 +206,11 @@ html, body {
   flex-grow: 1;
 }
 
+
 /*------------------------------------------- HEADER-BODY --------------------------------------*/
 /*------------------------------------------- HEADER-BODY --------------------------------------*/
+
+
 
 .header_body-inner {
   display: flex;
@@ -287,9 +297,14 @@ html, body {
 }
 
 
+
+
 /*=========================================== ABOUT ============================================*/
 /*------------------------------------------- ABOUT-CREATEX ------------------------------------*/
 /*------------------------------------------- ABOUT-CREATEX ------------------------------------*/
+
+
+
 
 
 .about_createx {
@@ -356,8 +371,11 @@ html, body {
   margin-right: 0;
 }
 
+
 /*------------------------------------------- ABOUT-VALUES -------------------------------------*/
 /*------------------------------------------- ABOUT-VALUES -------------------------------------*/
+
+
 
 .about_values {
   display: flex;
@@ -403,6 +421,7 @@ html, body {
 
 /*------------------------------------------- DIRECTIONS ---------------------------------------*/
 /*------------------------------------------- DIRECTIONS ---------------------------------------*/
+
 
 
 .directions_inner {
@@ -583,8 +602,10 @@ html, body {
   background-color: #7772F1;
 }
 
+
 /*------------------------------------------- CERTIFICATION ------------------------------------*/
 /*------------------------------------------- CERTIFICATION ------------------------------------*/
+
 
 
 .cert_inner {
@@ -642,13 +663,14 @@ html, body {
   object-fit: contain;
 }
 
+
 /*------------------------------------------- TEAM - SLIDER ------------------------------------*/
 /*------------------------------------------- TEAM - SLIDER ------------------------------------*/
+
 
 
 .team {
-  background: url("/images/decor/mainTeam_BG_group_1.svg")
-  calc(50% + 0px) calc(50% + 0px) no-repeat, #F4F5F6;
+  background: url("/images/decor/mainTeam_BG_group_1.svg") calc(50% + 0px) calc(50% + 0px) no-repeat, #F4F5F6;
 }
 
 .team_heading {
@@ -702,12 +724,12 @@ html, body {
   bottom: 0;
   padding: 20px;
   background: linear-gradient(180deg,
-    rgba(30, 33, 44, 0.00) 43.9%,
-    rgba(30, 33, 44, 0.03) 55.21%,
-    rgba(30, 33, 44, 0.33) 68.73%,
-    rgba(30, 33, 44, 0.56) 76.17%,
-    rgba(30, 33, 44, 0.77) 83.75%,
-    rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+      rgba(30, 33, 44, 0.00) 43.9%,
+      rgba(30, 33, 44, 0.03) 55.21%,
+      rgba(30, 33, 44, 0.33) 68.73%,
+      rgba(30, 33, 44, 0.56) 76.17%,
+      rgba(30, 33, 44, 0.77) 83.75%,
+      rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
   transform: translateY(50%);
   transition: all 0.3s;
 }
@@ -798,6 +820,7 @@ html, body {
 /*------------------------------------------- TESTIMONIALS -------------------------------------*/
 
 
+
 .testimonials {
   background: #F4F5F6;
   position: relative;
@@ -859,8 +882,7 @@ html, body {
   position: absolute;
   top: 0;
   left: -58px;
-  background: url("../images/icons/braces.svg")
-    0 0 / 100% no-repeat;
+  background: url("../images/icons/braces.svg") 0 0 / 100% no-repeat;
   width: 28px;
   height: 20px;
 
@@ -985,12 +1007,15 @@ html, body {
   margin-right: 0;
 }
 
+
 /*------------------------------------------- COMPANIES ----------------------------------------*/
 /*------------------------------------------- COMPANIES ----------------------------------------*/
 
+
+
 .companies {
   background: #F4F5F6;
-  
+
 }
 
 .companies_inner {
@@ -1002,8 +1027,7 @@ html, body {
   position: absolute;
   bottom: -120px;
   left: -230;
-  background: url("/images/decor/mainTeam_BG_shapes_3.svg")
-    0 0 / 100% no-repeat;
+  background: url("/images/decor/mainTeam_BG_shapes_3.svg") 0 0 / 100% no-repeat;
   width: 90px;
   height: 90px;
 }
@@ -1030,8 +1054,90 @@ html, body {
   transition: all 1.3s;
 }
 
-.companies_grid-link:hover img{
+.companies_grid-link:hover img {
   filter: grayscale(0);
   opacity: 1;
   transition: all 0.3s;
+}
+
+
+/*------------------------------------------- ACCORDEON ----------------------------------------*/
+/*------------------------------------------- ACCORDEON ----------------------------------------*/
+
+
+
+.program_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program_content {
+  margin-right: 30px;
+  max-width: 600px;
+}
+
+.program_heading {
+  margin-bottom: 60px;
+}
+
+.program_accordeon-item {
+  margin-bottom: 24px;
+}
+
+.program_accordeon-link {
+  display: block;
+  padding-left: 40px;
+}
+
+.program_accordeon-item:last-child {
+  margin-bottom: 0;
+}
+
+.program_accordeon-head {
+  font-weight: 700;
+  font-style: 20px;
+  line-height: 150%;
+  color: var(--gray-900, #1E212C);
+  position: relative;
+}
+
+.program_accordeon-head span {
+  font-weight: 400;
+  color: #FF3F3A;
+}
+
+.program_accordeon-head::before,
+.program_accordeon-head::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 18px;
+  height: 2px;
+  background-color: #FF3F3A;
+  border-radius: 2px;
+}
+
+.program_accordeon-head::after {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+
+.program_accordeon-text {
+  margin-top: 16px;
+  display: none;
+}
+
+.program_accordeon-link--active .program_accordeon-head::after {
+  transform: rotate(0deg);
+}
+
+.program__image {
+  flex-shrink: 0;
+}
+
+.program__image img {
+  width: 100%;
+  height: 100%;
 }
