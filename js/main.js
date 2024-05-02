@@ -98,4 +98,11 @@ function initMap() {
   });
 }
 
+$(".header_nav-list a, .header_top-btn, .footer_go-top").on("click", function (event){
+  event.preventDefault()
+  var id = $(this).attr('href'),
+  top = $(id).offset().top
+  $('body,html').animate({scrollTop: top}, 800)
+})
+
 })
