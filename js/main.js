@@ -13,6 +13,22 @@ $(function () {
     infinite: true,
     draggable: false,
     waitForAnimate: false,
+    responsive:[{
+      breakpoint: 1100,
+      settings: {slidesToShow: 3,},
+    },
+    {
+      breakpoint: 750,
+      settings: {slidesToShow: 2,},
+    },
+    {
+      
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 1,
+        draggable: true,
+      },
+    },],
   })
 
   $('.team_slider-prev').on('click', function (action) {
@@ -30,6 +46,11 @@ $(function () {
     dots: true,
     appendDots: $('.testimonials_dots'),
     waitForAnimate: false,
+    responsive:[{
+      breakpoint: 700,
+      settings: {},
+    
+    },],
   })
 
   $('.testimonials_prev').on('click', function (action) {
