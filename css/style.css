@@ -1488,11 +1488,11 @@ html, body {
   justify-content: space-between;
 }
 
-.questions__img {
+.questions__image {
   min-width: 350px;
 }
 
-.questions__img img {
+.questions__image img {
   height: 100%;
   width: 100%;
 }
@@ -1788,36 +1788,36 @@ html, body {
     max-width: 376px;
   }
 
-  .header_image img{
+  .header_image img {
     max-width: 450px;
   }
 
   /*---------------------------------------------------------------------------------------------*/
 
-  .blog_item-info{
+  .blog_item-info {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 0 8px;
   }
 
-  .blog_info-element{
+  .blog_info-element {
     padding: 0;
   }
 
-  .blog_info-element::after{
+  .blog_info-element::after {
     content: none;
   }
 
-  .blog_info-directions{
+  .blog_info-directions {
     order: 1;
   }
 
-  .blog_info-date{
+  .blog_info-date {
     order: 3;
     flex-basis: 100%;
   }
 
-  .blog_info-time{
+  .blog_info-time {
     order: 2;
   }
 }
@@ -1977,17 +1977,44 @@ html, body {
     text-align: center;
   }
 
-    /*---------------------------------------------------------------------------------------------*/
+  /*---------------------------------------------------------------------------------------------*/
 
-  .companies_grid{
+  .companies_grid {
     gap: 40px 5.0%;
   }
 
   /*---------------------------------------------------------------------------------------------*/
 
-  .program__image{
+  .program__image {
     max-width: 400px;
-  }  
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
+  .footer_top-inner{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer_top-collomn{
+    margin-bottom: 30px;
+  }
+
+  .footer_top-collomn:first-child{
+    flex-basis: 100%;
+    max-width: none;
+    margin-bottom: 30px;
+  }
+
+  .footer_top-collomn:last-child{
+    margin-bottom: 0;
+    max-width: none;
+    flex-basis: 100%;
+  }
+
+  .footer_form-items{
+    max-width: 315px;
+  }
 }
 
 
@@ -2043,30 +2070,58 @@ html, body {
     padding: 24px 5px 5px;
   }
 
-    /*---------------------------------------------------------------------------------------------*/
-  
-  .companies_grid{
-    grid-template: repeat(3,auto) / repeat(4, 1fr);
+  /*---------------------------------------------------------------------------------------------*/
+
+  .companies_grid {
+    grid-template: repeat(3, auto) / repeat(4, 1fr);
   }
 
   /*---------------------------------------------------------------------------------------------*/
-  
-  .blog_row{
+
+  .blog_row {
     flex-direction: column;
     margin: 0;
   }
 
-  .blog_item{
+  .blog_item {
     padding: 0px 0px 30px;
   }
 
-  .blog__image-box{
+  .blog__image-box {
     display: flex;
     justify-content: center;
   }
 
-  .blog__image-box img{
+  .blog__image-box img {
     width: auto;
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
+  .info_inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info_content {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .inf_map {
+    height: 200px;
+    width: 100%;
+    max-width: none;
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
+  .question_image{
+    display: none;
+  }
+
+  .questions_content{
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -2097,17 +2152,17 @@ html, body {
     grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
 
-/*---------------------------------------------------------------------------------------------*/
+  /*---------------------------------------------------------------------------------------------*/
 
-  .testimonials_slider-wrapper{
+  .testimonials_slider-wrapper {
     padding: 0;
   }
 
-  .team_slide{
+  .team_slide {
     padding: 30px 15px;
   }
-  
-  .testimonials_arrow{
+
+  .testimonials_arrow {
     display: none;
   }
 }
@@ -2129,6 +2184,34 @@ html, body {
     font-size: 25px;
   }
 
+  /*---------------------------------------------------------------------------------------------*/
+
+  .main_about,
+  .main_program {
+    padding: 60px 0 100px;
+  }
+
+  .main_directions,
+  .main_testimonials,
+  .main_blog,
+  .main_info {
+    padding-bottom: 100px;
+  }
+
+  .main_team {
+    padding: 120px 0px 100px;
+  }
+
+  .main_companies {
+    padding-bottom: 40px;
+  }
+
+  .main_questions {
+    padding-bottom: 40px;
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
   .about_text {
     margin-bottom: 30px;
   }
@@ -2146,6 +2229,10 @@ html, body {
     margin: 0px 0px 30px 0px;
   }
 
+  .about-button:last-child{
+    margin: 0;
+  }
+
   /*---------------------------------------------------------------------------------------------*/
 
   .directions_list {
@@ -2156,62 +2243,118 @@ html, body {
     display: none;
   }
 
-    /*---------------------------------------------------------------------------------------------*/
+  /*---------------------------------------------------------------------------------------------*/
 
-    .team_slider-arrows{
-      display: none;
-    }
-    
-  .team_image-box{
+  .team_slider-arrows {
+    display: none;
+  }
+
+  .team_image-box {
     max-width: 300px;
     margin: 0 auto 16px;
   }
 
   /*---------------------------------------------------------------------------------------------*/
 
-  .testimonials_slider-wrapper{
+  .testimonials_slider-wrapper {
     margin-bottom: 15px;
   }
 
-  .slide_inner{
+  .slide_inner {
     padding-left: 30px;
   }
 
-  .testimonials_quote{
+  .testimonials_quote {
     font-size: inherit;
     line-height: inherit;
   }
 
-  .testimonials_quote::before{
+  .testimonials_quote::before {
     left: -30px;
     width: 20px;
   }
 
-  .testimonials_dots button{
+  .testimonials_dots button {
     width: 20px;
   }
 
 
+  /*---------------------------------------------------------------------------------------------*/
+
+  .companies_grid {
+    grid-template: repeat(4, auto) / repeat(3, 1fr);
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
+  .program_accordeon-head {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
+  .blog_top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
+  .question_form-row{
+    flex-direction: column;
+  }
+
+  .question_form-label{
+    margin: 0px 0px 24px 0px;
+  }
+
+  .question_form-label:last-child{
+    margin: 0;
+  }
+
+  .question_form-input,
+  .question_form-text{
+    margin-top: 0;
+  }
+  .question_text-label{
+    font-size: 14px;
+  }
+
+  .question_checkbox-label{
+    margin: 0px 0px 24px 0px;
+  }
+
     /*---------------------------------------------------------------------------------------------*/
-  
-    .companies_grid{
-      grid-template: repeat(4,auto) / repeat(3, 1fr);
-    }
 
-    /*---------------------------------------------------------------------------------------------*/ 
-
-    .program_accordeon-head{
-      font-size: inherit;
-      line-height: inherit;
-    }
-
-    /*---------------------------------------------------------------------------------------------*/ 
-
-    .blog_top{
+    .footer_top-inner{
       flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 30px;
     }
+
+    .footer_top-title--slide{
+      pointer-events: auto;
+      margin: 0;
+    }
+
+    .footer_top-list{
+      margin-top: 12px;
+      display: none;
+    }
+
+    .footer_bottom-inner{
+      flex-direction: column-reverse;
+    }
+
+    .footer_copy{
+      text-align: center;
+    }
+
+    .footer_go-top{
+      margin-bottom: 15px;
+    }
+
+
 }
 
 /*~ MEDIA - 450px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -2263,9 +2406,15 @@ html, body {
   }
 
 
-    /*---------------------------------------------------------------------------------------------*/
-  
-    .companies_grid{
-      grid-template: repeat(2,auto) / repeat(6, 1fr);
-    }
+  /*---------------------------------------------------------------------------------------------*/
+
+  .companies_grid {
+    grid-template: repeat(2, auto) / repeat(6, 1fr);
+  }
+
+  /*---------------------------------------------------------------------------------------------*/
+
+  .info_socials-item {
+    margin-right: 15px;
+  }
 }

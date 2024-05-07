@@ -140,4 +140,7 @@ $(function () {
   })
 
 
+  $('.footer_top-title--slide').on('click', function () {
+    $(this).next().slideToggle()
+  })
 })
